@@ -181,9 +181,11 @@ app.layout = html.Div(children=[
      
 ])
 
+with open("index.html", "w") as file:
+    file.write(app.index())
+     
 if __name__ == '__main__':
     app.run(debug=True)
     
-    with open("index.html", "w") as file:
-        file.write(app())
+
 
