@@ -210,5 +210,9 @@ app.layout = dbc.Container([
      
 ], fluid=True)
 
+with open("index.html", "w") as file:
+    file.write(app.index())
+     
+
 if __name__ == '__main__':
     app.run_server(debug=True)

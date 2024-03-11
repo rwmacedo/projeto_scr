@@ -177,12 +177,11 @@ app.layout = html.Div(children=[
         id='inad_regiao_p',
         figure=fig23
     )   
-     
+    
      
 ])
 
-with open("index.html", "w") as file:
-    file.write(app.index())
+  
      
 if __name__ == '__main__':
     app.run(debug=True)
